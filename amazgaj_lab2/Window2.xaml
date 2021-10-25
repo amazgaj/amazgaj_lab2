@@ -1,0 +1,26 @@
+﻿<Window x:Class="amazgaj_lab2.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:amazgaj_lab2"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <RadioButton Content="Hybryda" FontSize ="20" Margin="34,53,-34,-53" Checked="Hybryda_Checked" Unchecked="Hybryda_Unchecked"/>
+        <RadioButton Content="Gaz" FontSize ="20" Margin="34,87,-34,-87" Checked="Gaz_Checked" Unchecked="Gaz_Unchecked"/>
+        <RadioButton Content="Diesel" FontSize ="20" HorizontalAlignment="Left" Margin="34,122,0,0" VerticalAlignment="Top" Checked="Diesel_Checked" Unchecked="Diesel_Unchecked"/>
+        <RadioButton Content="Benzyna" FontSize ="20" Margin="34,160,-34,-160" Checked="Benzyna_Checked" Unchecked="Benzyna_Unchecked"/>
+        <ComboBox Margin="34,274,545,96" DropDownClosed="ComboBox_SelectionChanged">
+            <ComboBoxItem>300</ComboBoxItem>
+            <ComboBoxItem>400</ComboBoxItem>
+            <ComboBoxItem>500</ComboBoxItem>
+            <ComboBoxItem>600</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Moc (KM):" FontSize ="20" HorizontalAlignment="Left" Height="39" Margin="110,231,0,0" VerticalAlignment="Top" Width="102"/>
+        <Button Content="Powrót" FontSize ="20" HorizontalAlignment="Left" Height="105" Margin="528,286,0,0" VerticalAlignment="Top" Width="188" Click="Powrot_Click"/>
+        <Label Content="Cena:" FontSize ="20" HorizontalAlignment="Left" Height="84" Margin="542,60,0,0" VerticalAlignment="Top" Width="202"/>
+        <Label x:Name="cena" Content="0" FontSize ="20" HorizontalAlignment="Left" Height="72" Margin="542,102,0,0" VerticalAlignment="Top" Width="116"/>
+
+    </Grid>
+</Window>
